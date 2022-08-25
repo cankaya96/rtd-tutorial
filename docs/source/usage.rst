@@ -15,7 +15,7 @@ To use PYFBAS, first install it using pip:
 Importing Libraries
 ----------------
 
-.. code-block:: ipynb
+.. code-block:: console
    
    from pyfbad.data import database as db
    from pyfbad.features import create_feature as cf
