@@ -12,13 +12,15 @@ To use PYFBAS, first install it using pip:
 
    (.venv) $ pip install pyfbad
 
-Creating recipes
+Importing Libraries
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
+.. code-block:: ipynb
+   
+   from pyfbad.data import database as db
+   from pyfbad.features import create_feature as cf
+   from pyfbad.models import models as md
+   from pyfbad.visualization import visualizations as viz
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
