@@ -31,3 +31,5 @@ Data Feature Extraction
                 value_column_name="value")
 
 >>> df_model = cf_obj.get_modeling_data(df_model=df_transform, model_name="IF", date_type='H')
+
+date_type gives the time grain 'H' means 'hourly', 'D' means 'daily' grain
