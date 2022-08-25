@@ -32,4 +32,15 @@ Data Feature Extraction
 
 >>> df_model = cf_obj.get_modeling_data(df_model=df_transform, model_name="IF", date_type='H')
 
-date_type gives the time grain 'H' means 'hourly', 'D' means 'daily' grain
+**date_type** parameter gives the time grain 'H' means 'hourly', 'D' means 'daily' grain
+**model_name** parameter gives spesific needs for spesific model
+
+Data Modeling
+----------------
+>>> model_obj = md.IsolationForestModel()
+>>> anomalies = model_obj.train_model(df_model = df_model, contamination_value=float(0.06))
+
+Anomaly Visualization
+----------------
+>>> av = viz.Anomaly_Visualization()
+>>> av.line_graph(anomalies, algorithm = "IF", time_column="ds", value_column="y", layout=None, save=False, path = None)
