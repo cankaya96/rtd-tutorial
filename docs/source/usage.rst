@@ -19,15 +19,15 @@ Importing Libraries
 >>> from pyfbad.models import models as md
 >>> from pyfbad.visualization import visualizations as viz
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+Data Reading
+----------------
+>>> conn=db.File()
+>>> df=conn.read_from_csv(time_column_name="timestamp", file_path="Twitter_volume_AMZN.csv")
 
-.. autoexception:: lumache.InvalidKindError
+Data Feature Extraction
+----------------
+>>> cf_obj = cf.Features()
+>>> df_transform = cf_obj.transform_data(df=df, time_column_name="timestamp", 
+                value_column_name="value")
 
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+>>> df_model = cf_obj.get_modeling_data(df_model=df_transform, model_name="IF", date_type='H')
