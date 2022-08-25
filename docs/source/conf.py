@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'PYFBAD'
+copyright = '2021, CANKAYA96'
+author = 'CANKAYA96'
 
 release = '0.1'
 version = '0.1.0'
