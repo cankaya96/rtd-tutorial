@@ -17,4 +17,5 @@ Contents
 
    usage
    database
+   features
    models
