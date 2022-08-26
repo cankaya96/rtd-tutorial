@@ -26,6 +26,28 @@ Train a Prophet model with given dataframe
 Tries to predict anomalies based on training results. 
 **bound_coefficient (float):** optimization coefficient for anomaly number
 
+   >>> get_anomalies(self, model_result, anomaly_number_level="Low")
+Tries to predict anomalies based on number level for each coefficients.
+**anomaly_number_level (str):** detected total anomaly number, high or low 
+
+   >>> find_optimum_anomalies(self, anomaly_table, results):
+Tries to find best coefficient for getting optimum anomalies.
+
+pyfbad.models.GaussianMixtureModel
+----------------------------------
+
+   >>> train_model(self, df_model, cluster_number, random_state=7)
+Train a Gaussian Mixture model with given dataframe.
+
+   >>> get_all_models(self, data)
+Train a Gaussian Mixture model with different cluster number values.
+
+   >>> find_best_model(self, bic_table, models)
+Find best gmm model wit respect to different cluster numbers.
+
+   >>> train_forecast(self, gmm_model, model_data, anomaly_percent)
+Forecasting anomalies using found best gmm model.
+**anomaly_percent (int):** threshold value for number of detected anomalies 
 
 .. autosummary::
    :toctree: generated
