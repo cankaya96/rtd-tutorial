@@ -1,7 +1,7 @@
-API
+MODELS
 ===
 
 .. autosummary::
    :toctree: generated
 
-   lumache
+   PYFBAD
