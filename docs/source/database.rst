@@ -63,7 +63,9 @@ pyfbad.database.CloudDB
 
   >>> __init__(self, key_path, project_name)
 Get the connection configuration for GCP BigQuery.
+
 **key_path (str):** Service account JSON file path
+
 **project_name (str):** Contains BigQuery project name
 
   >>> reading_raw_data(self, query_string)
@@ -77,12 +79,18 @@ pyfbad.database.File
 
   >>> read_from_csv(self, time_column_name, file_path, filter=None)
 Reads data from csv file.
+
 **time_column_name (str):** name of the time column in dataset
+
 **file_path (str):** file path of csv file
+
 **filter (array):** column_name,value
 
   >>> writing_to_csv(self, data, file_path, index=False)
 Writes data to csv file.
+
 **data (DataFrame):** dataframe that will be written to csv
+
 **file_path (str):** csv file path of dataframe to write
+
 **index (boolean):** booelan value of whether add or not index to csv
