@@ -20,7 +20,9 @@ add_filter method should be used to build.
 
   >>> get_data_as_df(self, database, collection, filter=None)
 Reads data from database given a collection name.
+
 If necessary, filter option takes a list of dictionary. 
+
 add_filter method should be used to build.
 
   >>> add_filter(self, filter_array, type, value)
@@ -47,9 +49,13 @@ Reading row data from db with sql query.
 
   >>> writing_to_db(self, data, db_conn, table_name, chunksize=10000, if_exists="append")
 Writing detected anomalies to database table.
+
 **db_conn (Database instance):** Engine instance
+
 **table_name (str):** database table name for dataframe
+
 **chunksize (integer):** number of rows in each batch to be written.
+
 **if_exists (str):** appending new values to existing db table
 
 pyfbad.database.CloudDB
