@@ -1,7 +1,7 @@
 Database
 =======
 
-pyfbad.database.MongoDB
+pyfbad.data.database.MongoDB
 ------------------------
 
   >>> __init__(self, db_name, db_port, db_path)
@@ -32,7 +32,7 @@ Add filter to mongodb query in time, value, group and sort domains.
 Writing detected anomalies to mongodb collections.
 
 
-pyfbad.database.SQLDB
+pyfbad.data.database.SQLDB
 ---------------------
 
   >>> __init__(self, **kwargs)
@@ -58,7 +58,7 @@ Writing detected anomalies to database table.
 
 **if_exists (str):** appending new values to existing db table
 
-pyfbad.database.CloudDB
+pyfbad.data.database.CloudDB
 ------------------------
 
   >>> __init__(self, key_path, project_name)
@@ -74,7 +74,7 @@ Reading raw data from BigQuery.
   >>> writing_to_bq(self, dataframe, dataset, table_name)
 It writes dataframe to bq, If table is exist it adds inside of it, else it creates table first.
 
-pyfbad.database.File
+pyfbad.data.database.File
 ---------------------
 
   >>> read_from_csv(self, time_column_name, file_path, filter=None)
