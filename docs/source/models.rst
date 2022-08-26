@@ -1,4 +1,4 @@
-MODELS
+Models
 =====
 
 .. autosummary::
