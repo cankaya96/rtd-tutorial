@@ -1,21 +1,21 @@
 Models
 =====
 
-pyfbad.models.IsolationForestModel
+pyfbad.models.models.IsolationForestModel
 ----------------------------------
 That model includes classic Isolation Forest (IF) Model. It has **train_model()** method
 
    >>> train_model(self, df_model, contamination_value=float(0.06)) 
 It has default contamination value (float(0.06)) and it trains the model and make prediction with given dataframe.
 
-pyfbad.models.LocalOutlierFactorModel
+pyfbad.models.models.LocalOutlierFactorModel
 --------------------------------------
 That model includes classic Isolation Forest (IF) Model. It has **train_model()** method
 
    >>> train_model(self, df_model, contamination_value=float(0.06)) 
 It has default contamination value (float(0.06)) and it trains the model and make prediction with given dataframe.
 
-pyfbad.models.ProphetModel
+pyfbad.models.models.ProphetModel
 ---------------------------
 That model developed by facebook and that is our first model we implemented on pyfbad.
 
@@ -33,7 +33,7 @@ Tries to predict anomalies based on number level for each coefficients.
    >>> find_optimum_anomalies(self, anomaly_table, results):
 Tries to find best coefficient for getting optimum anomalies.
 
-pyfbad.models.GaussianMixtureModel
+pyfbad.models.models.GaussianMixtureModel
 ----------------------------------
 
    >>> train_model(self, df_model, cluster_number, random_state=7)
