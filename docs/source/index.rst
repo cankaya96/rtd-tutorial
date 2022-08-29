@@ -19,3 +19,4 @@ Contents
    database
    features
    models
+   notification
