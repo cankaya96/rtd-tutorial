@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'PYFBAD'
-copyright = '2021, CANKAYA96'
-author = 'CANKAYA96'
+copyright = '2022, Teknasyon'
+author = 'M.Furkan ÇANKAYA'
 
 release = '0.1'
 version = '0.1.0'
